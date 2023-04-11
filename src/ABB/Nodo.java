@@ -27,6 +27,16 @@ public class Nodo {
         return der;
     }
 
+    
+
+    public void setIzq(Nodo izq) {
+        this.izq = izq;
+    }
+
+    public void setDer(Nodo der) {
+        this.der = der;
+    }
+
     public void insert(int dato) {
         if (dato < this.dato) {
             // Insertando en lado izquierdo
@@ -44,4 +54,6 @@ public class Nodo {
             }
         }
     }
+
+
 }
