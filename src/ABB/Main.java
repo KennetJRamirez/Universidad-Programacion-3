@@ -1,4 +1,5 @@
 package ABB;
+
 public class Main {
     public static void main(String[] args) {
         Arbol arbol = new Arbol();
@@ -11,11 +12,13 @@ public class Main {
         arbol.insert(50);
         arbol.insert(53);
 
-        System.out.print("Inorden: " + " , ");
+        System.out.print("Inorden: ");
         arbol.showInOrder();
-        System.out.print("Postorden: " + " , ");
+        System.out.println("\n");
+        System.out.print("Postorden: ");
         arbol.showPostOrder();
-        System.out.print("Preorden: " + " , ");
+        System.out.println("\n");
+        System.out.print("Preorden: ");
         arbol.showPreOrder();
     }
 }

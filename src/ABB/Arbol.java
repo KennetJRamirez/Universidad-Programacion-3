@@ -23,7 +23,7 @@ public class Arbol {
         if (nodo == null) {
             return;
         } else {
-            System.out.println(nodo.getDato());
+            System.out.print(nodo.getDato() + "->");
             preOrder(nodo.getIzq());
             preOrder(nodo.getDer());
         }
@@ -38,7 +38,7 @@ public class Arbol {
             return;
         } else {
             inOrder(nodo.getIzq());
-            System.out.println(nodo.getDato());
+            System.out.print(nodo.getDato() + "->");
             inOrder(nodo.getDer());
         }
 
@@ -54,8 +54,9 @@ public class Arbol {
         } else {
             postOrder(nodo.getIzq());
             postOrder(nodo.getDer());
-            System.out.println(nodo.getDato());
+            System.out.print(nodo.getDato() + "->");
         }
-
     }
+
+    
 }
